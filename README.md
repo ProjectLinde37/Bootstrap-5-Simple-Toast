@@ -10,6 +10,18 @@ Gebouwd bovenop **Bootstrap 5** (JS + CSS).
 ✅ XSS‑veilig (HTML escaping)
 
 ---
+## Demo
+
+Live demo of the Goosse Toast module:
+
+👉 https://projectlinde37.github.io/Bootstrap-5-Simple-Toast/
+
+The demo showcases:
+- All toast types (`info`, `success`, `warning`, `danger`)
+- Automatic toast container creation
+- Optional progress bar support
+- Bootstrap‑native toast behaviour
+---
 
 ## 📁 Locatie
 
