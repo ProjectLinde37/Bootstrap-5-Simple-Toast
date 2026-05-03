@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Goosse Toast Styling
+   - Bootstrap 5 compatible
+   - Progressbar support
+   - Scoped & production-safe
+   ========================================================================== */
+
+/* Toast wrapper */
+.goosse-toast {
+  min-width: 320px;
+  position: relative;      /* nodig voor progressbar */
+  overflow: hidden;        /* voorkomt overlap */
+}
+
+/* Header spacing */
+.goosse-toast .toast-header {
+  gap: 0.5rem;
+}
+
+/* Body typography */
+.goosse-toast .toast-body {
+  line-height: 1.4;
+}
+
+/* ==========================
+   Progress bar (optioneel)
+   ========================== */
+
+/* Container onderaan de toast */
+.goosse-toast-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* De bewegende balk */
+.goosse-toast-progress-bar {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+}
