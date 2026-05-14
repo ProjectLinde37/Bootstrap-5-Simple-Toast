@@ -13,13 +13,30 @@
 }
 
 /* Header spacing */
-.goosse-toast .toast-header {
-  gap: 0.5rem;
+
+
+.goosse-toast .toast-header,
+.goosse-toast .toast-body {
+
+  --bs-toast-padding-x: 0.75rem;
+  --bs-toast-padding-y: 0.75rem;
+
 }
+
+
+
+.goosse-toast .toast-header strong {
+  margin-left: 0;
+}
+
 
 /* Body typography */
 .goosse-toast .toast-body {
   line-height: 1.4;
+
+  padding-left: calc(var(--bs-toast-padding-x) + 0.5rem);
+  padding-right: calc(var(--bs-toast-padding-x) + 0.5rem);
+
 }
 
 /* ==========================

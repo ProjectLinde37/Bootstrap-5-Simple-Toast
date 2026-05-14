@@ -25,27 +25,45 @@
         and Bootstrap 5.
     </p>
 
-    <div class="d-flex flex-wrap gap-2 mt-4">
+    <div class="mt-4">
+        <h5 class="mb-2">Basic toasts</h5>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-info" id="btn-info">Info</button>
+            <button class="btn btn-success" id="btn-success">Success</button>
+            <button class="btn btn-warning" id="btn-warning">Warning</button>
+            <button class="btn btn-danger" id="btn-danger">Danger</button>
+        </div>
 
-        <button class="btn btn-info" id="btn-info">
-            Info toast
-        </button>
+        <h5 class="mb-2">Progress & interaction</h5>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-secondary" id="btn-progress">
+                Progress (click to pause)
+            </button>
+        </div>
 
-        <button class="btn btn-success" id="btn-success">
-            Success toast
-        </button>
+        <h5 class="mb-2">Positions</h5>
+        <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-outline-primary" id="btn-top-left">Top left</button>
+            <button class="btn btn-outline-primary" id="btn-middle-left">Middle left</button>
+            <button class="btn btn-outline-primary" id="btn-bottom-left">Bottom left</button>
 
-        <button class="btn btn-warning" id="btn-warning">
-            Warning toast
-        </button>
+            <button class="btn btn-outline-primary" id="btn-top-right">Top right</button>
+            <button class="btn btn-outline-primary" id="btn-middle-right">Middle right</button>
+            <button class="btn btn-outline-primary" id="btn-bottom-right">Bottom right</button>
 
-        <button class="btn btn-danger" id="btn-danger">
-            Danger toast
-        </button>
+            <button class="btn btn-outline-dark" id="btn-center">Center</button>
+        </div>
 
-        <button class="btn btn-secondary" id="btn-progress">
-            Toast with progress
-        </button>
+
+        <h5 class="mt-4 mb-2">HTML content</h5>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-outline-success" id="btn-html-message">
+                HTML in message
+            </button>
+            <button class="btn btn-outline-primary" id="btn-html-title-message">
+                HTML in title + message
+            </button>
+        </div>
 
     </div>
 </div>
