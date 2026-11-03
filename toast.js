@@ -118,7 +118,7 @@
             bodyEl.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const text = bodyEl.innerText.trim();
-                if (!text) return;
+                if (!text || !navigator.clipboard) return;
 
                 navigator.clipboard.writeText(text).then(() => {
                     bodyEl.classList.add('opacity-75');
@@ -155,9 +155,11 @@
             };
 
             const pause = () => {
+                if (startTime === null) return;
                 clearTimeout(timeoutId);
                 const elapsed = Date.now() - startTime;
                 remaining -= elapsed;
+                startTime = null;
 
                 const currentWidth = getComputedStyle(bar).width;
                 bar.style.transition = 'none';
@@ -221,7 +223,7 @@
        Publieke API
        ========================== */
 
-    const VERSION = '1.0';
+    const VERSION = '1.1';
 
     window.goosseToast = {
         version: VERSION,

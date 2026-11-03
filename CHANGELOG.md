@@ -2,6 +2,13 @@
 
 All notable changes to Goosse Toast are documented here.
 
+## [1.1] – 2026-11-03
+
+### Fixed
+
+- **Crash clicking a toast body on non-secure origins** — `navigator.clipboard` is now guarded before `writeText` is called
+- **Progress bar `pause()` before `start()`** — pressing the mouse before `shown.bs.toast` no longer corrupts the remaining time (negative values)
+
 ## [1.0] – 2026-11-03
 
 ### Added
