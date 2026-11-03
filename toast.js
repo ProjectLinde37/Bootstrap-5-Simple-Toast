@@ -221,7 +221,10 @@
        Publieke API
        ========================== */
 
+    const VERSION = '1.0';
+
     window.goosseToast = {
+        version: VERSION,
         config: CONFIG,
         show(options)
         {

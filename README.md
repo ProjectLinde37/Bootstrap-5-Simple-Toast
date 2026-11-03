@@ -1,5 +1,7 @@
 # Goosse Toast Module
 
+**Version 1.0** — see [CHANGELOG.md](CHANGELOG.md)
+
 Lightweight JavaScript module for **toasts and notifications**.  
 Built on top of **Bootstrap 5** (JS + CSS).
 
